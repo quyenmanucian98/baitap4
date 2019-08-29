@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHuyển tiền</title>
+</head>
+<body>
+<form>
+    <fieldset >
+        <select>Chuyển Đổi tiền giữa cá quốc gia</select>
+        Amount: <input id="1" type="text" size="10">
+        From Currency: <select id="tientruockhichuyen">
+        <option value="1">Mỹ</option>;
+        <option value="3000">Nhật Bản</option>;
+        <option value="23000">Việt Nam</option>;
+    </select>
+        To Currency: <select id="tiensaukhichuyen">
+        <option value="1">USD</option>;
+        <option value="3000">Yên</option>;
+        <option value="23000">VNĐ</option>;
+    </select>
+        <input id="2" type="text">
+        <button type="button" onclick="chuyentien()">Thành Tiền</button>
+        <script>
+            function chuyentien() {
+                let A = document.getElementById('tientruockhichuyen').value;
+                let B = document.getElementById('tiensaukhichuyen').value;
+                let C = document.getElementById('1').value;
+                document.getElementById('2').value = C*B/A;
+
+            }
+        </script>
+    </fieldset>
+</form>
+</body>
+</html>

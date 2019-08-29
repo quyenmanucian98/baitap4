@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+    <fieldset>
+        <legend>CACULATOR</legend>
+        Số thứ nhất: <input id="sothunhat" type="text" size="10"><br/>
+        Số thứ hai : <input id="sothuhai" type="text" size="10"><br/>
+        <input id="1" type="text">
+        <button type="button" onclick="phepcong()">Công(+)</button>
+        <script>
+            function phepcong() {
+                let Q = +document.getElementById('sothunhat').value;
+                let D = +document.getElementById('sothuhai').value;
+                document.getElementById('1').value =Q + D
+                document.getElementById('1')
+            }
+        </script>
+        <button type="button" onclick="pheptru()">Trừ(-)</button>
+        <script>
+            function pheptru() {
+                let U = +document.getElementById('sothunhat').value;
+                let N = +document.getElementById('sothuhai').value;
+                document.getElementById('1').value= U - N
+            }
+        </script>
+        <button type="button" onclick="phepnhan()">Nhân(*)</button>
+        <script>
+            function phepnhan() {
+                let G = +document.getElementById('sothunhat').value;
+                let O = +document.getElementById('sothuhai').value;
+                document.getElementById('1').value= G * O
+            }
+        </script>
+        <button type="button" onclick="phepchia()">Chia(/)</button>
+        <script>
+            function phepchia() {
+                let H = +document.getElementById('sothunhat').value;
+                let K = +document.getElementById('sothuhai').value;
+                document.getElementById('1').value= H / K
+            }
+        </script>
+    </fieldset>
+</body>
+</html>
